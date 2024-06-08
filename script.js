@@ -6,7 +6,6 @@ btn.addEventListener("click", () => {
     .then((res) => res.json())
     .then((data) => {
       const newJoke = data.attachments[0].fallback;
-      console.log(newJoke);
       joke.innerText = newJoke;
     });
 });
